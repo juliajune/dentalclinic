@@ -1,5 +1,7 @@
 Dental clinic.
 
+Project life link: http://juliajune.github.io/dentalclinic
+
 Convert Figma template to HTML, CSS, Javascrit template.
 
 Was used:
@@ -7,3 +9,4 @@ Was used:
  - BEM-naming
  - responsive. Descktop first
  - Gulp
+
