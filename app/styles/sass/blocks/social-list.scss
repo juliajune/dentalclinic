@@ -1,0 +1,19 @@
+/*-- SOCIAL LIST --*/
+.social-list{
+    &__item:not(:last-child){
+        margin-bottom: 8px;
+    }
+    &__link{
+        display: inline-block;
+        border-bottom: 1px solid transparent;
+        transition: var(--transition-time);
+        &:hover{
+            border-bottom: 1px solid var(--main);
+	        transition: var(--transition-time);
+        }
+        svg{
+            margin-right: 10px;
+        }
+    }
+}
+/*-- /SOCIAL LIST --*/

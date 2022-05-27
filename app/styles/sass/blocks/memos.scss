@@ -1,0 +1,80 @@
+/*-- MEMOS SECTION--*/
+.memos{
+    background-image: url('../images/dist/memos-bg.jpg');
+	background-color: var(--main);
+	background-position: center center;
+	background-repeat: no-repeat;
+    padding: 70px 0px;
+    @media screen and (max-width : 768px) {
+        background: 0;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+       
+    }
+    &__col{
+        width: 50%;
+        padding-left: 50px;
+        @media screen and (max-width : 992px) {
+            padding-left: 20px;
+        }
+        @media screen and (max-width : 768px) {
+            width: 100%;
+            padding-left: 0;
+            &:first-child{
+                text-align: center;
+            }           
+        }
+       
+    }
+    /*
+    &__preview{
+        
+    }*/
+    &__body{
+        padding-top: 25px;
+        @media screen and (max-width : 768px) {
+            padding-top: 50px;
+        }
+    }
+    &__title{
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: -0.38 px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 25px;  
+        @media screen and (max-width : 768px) {
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 15px;  
+        }  
+    }   
+    &__item{
+        margin-bottom: 20px;
+    }
+}
+
+/*-- /MEMOS SECTION --*/
+
+/*-- SINGLE MEMO --*/
+.memo{
+	text-align: left;
+    &__title{
+        font-size: 20px;
+        line-height: 27px;
+        color: var(--primary);
+        margin-bottom: 3px; 
+        @media screen and (max-width : 768px) {
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 10px;  
+        }         
+    }
+}
+/*-- /SINGLE MEMO --*/

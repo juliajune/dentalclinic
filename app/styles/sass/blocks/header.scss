@@ -1,0 +1,159 @@
+
+/*-- HEADER --*/
+.header{
+	background-color: var(--main);
+	box-shadow: 0px 1px 0px #E5E9F2;
+    &__content{
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__side{
+        flex: 1 1 20%;
+        &:first-child{
+            margin-right: 15px;
+        }
+        &:last-child{
+            display: flex;
+            justify-content: end;
+            margin-left: 15px;
+            @media screen and (max-width : 576px) {
+                display: none;
+            }
+        }
+       
+    }
+    &__logo{
+        display: block;
+        height: 30px;
+    }
+    /*
+    &{
+        display: none;
+    }*/
+    &__nav{
+        color:  var(--primary-text);
+        font-weight: 700;
+    }
+    
+    &__nav-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 -16px;
+        flex-direction: row;
+    }
+    &__nav-item{
+        padding: 16px;
+    }
+    &__nav-link{
+        display: inline-block;
+        transition: var(--transition-time);
+        padding-bottom: 2px;
+        border: 1px solid transparent;
+        &:hover{
+            color:  var(--primary);
+            border-bottom: 1px solid var(--primary);
+            transition: var(--transition-time);
+        }
+        &_active{
+            color:  var(--primary);
+            pointer-events: none;
+        }
+    }
+   
+}
+
+@media screen and (max-width : 1024px) {
+	body.no-scroll{
+		overflow: hidden;
+	}
+	
+    .header{
+		 position: relative;
+         /* HEADER BURGER */
+         &__burger{
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            z-index: 99;
+            margin-right: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+            
+            &:before,
+            &:after{
+                content: '';
+                position: absolute;
+                display: block;
+                background-color: var(--gray);
+                width: 100%;
+                height: 2px;
+                left: 0;
+                transition: all 0.3s ease 0s;
+                
+            }
+            span{
+                display: block;
+                position: absolute;
+                top: 9px;
+                background-color: var(--gray);
+                width: 100%;
+                height: 2px;
+                left: 0;
+                transition: all 0.3s ease 0s;
+            }
+            &:before{
+                top: 0px;
+            }
+            
+            &:after{
+                bottom: 0px;
+            }
+            
+            &.active:before{
+                transform: rotate(45deg);
+                top: 9px;
+            }
+            
+            &.active:after{
+                transform: rotate(-45deg);
+                bottom: 9px;
+            }
+            
+            &.active span{
+                transform: scale(0);
+                
+            } 
+        }
+        /* /HEADER BURGER */
+        &__nav{
+            position: absolute;
+            display: block;
+            top: 101%;
+            left: 0;
+            width: 100%;
+            background-color: var(--main);
+            padding: 30px;
+            overflow: auto; /*Прокрутка по пунктам меню, если меню не вмещается а экран*/
+            z-index: 1;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: all 0.3s ease 0s;            
+        }
+        &__nav.active{
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);      
+        }
+    
+        &__nav-list{
+            flex-direction: column;
+            margin: 0;		
+        }	 
+    }	
+}

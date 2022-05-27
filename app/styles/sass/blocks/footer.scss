@@ -1,0 +1,70 @@
+/*-- FOOTER --*/
+.footer{
+	padding: 35px 0px;
+	background-color: var(--primary);
+	color: var(--main);
+    svg{
+        fill: var(--main);
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -25px;
+        p:not(:last-child){
+            margin-bottom: 15px;
+        }
+    }
+    &__col{
+        flex-basis: 22.22%;
+        padding: 0 25px;
+        @media screen and (max-width : 992px) {
+            flex-basis: 50%;
+        }
+        @media screen and (max-width : 576px) {
+            flex-basis: 100%;
+        }
+        &:first-child{
+            flex-basis: 33.33%;
+            @media screen and (max-width : 992px) {
+                flex-basis: 50%;
+            }
+            @media screen and (max-width : 576px) {
+                flex-basis: 100%;
+            }
+        }
+        &:not(:nth-last-child(-n+2)){
+            @media screen and (max-width : 992px) {
+                margin-bottom: 35px;
+            }            
+        }	
+        &:not(:last-child){
+            @media screen and (max-width : 576px) {
+                margin-bottom: 35px;
+            }
+            
+        }        
+    }
+    &__logo{
+        margin-bottom: 30px;
+        display: block;	
+    }
+    &__widget:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+}
+/*-- /FOOTER --*/
+/*-- FOOTER WIDGET--*/
+.footer-widget{
+    &__title{
+        font-size: 20px;
+        line-height: 27px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    &__content{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+/*-- /FOOTER WIDGET--*/

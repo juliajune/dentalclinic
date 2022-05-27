@@ -1,0 +1,29 @@
+@use 'sass:math';
+@use 'sass:color';
+
+@import 'reset';
+@import 'vars';
+@import 'global';
+@import 'node_modules/swiper/swiper';
+@import 'blocks/icon';
+@import 'blocks/button';
+@import 'blocks/preview-transform';
+@import 'blocks/lazyload';
+@import 'blocks/header';
+@import 'blocks/social';
+@import 'blocks/hero';
+@import 'blocks/call';
+@import 'blocks/advantages';
+@import 'blocks/memos';
+@import 'blocks/services';
+@import 'blocks/doctors';
+@import 'blocks/networks';
+@import 'blocks/testimonials';
+@import 'blocks/blog';
+@import 'blocks/post';
+
+
+@import 'blocks/footer';
+@import 'blocks/contact-list';
+@import 'blocks/social-list';
+@import 'blocks/subscribe';

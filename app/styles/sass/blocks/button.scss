@@ -1,0 +1,29 @@
+/*-- BUTTON --*/
+.button{
+    display: inline-block;
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: var(--main);
+    font-size: 20px;
+    padding: 17px 32px;
+    transition: var(--transition-time);
+    &:hover{
+        background-color: var(--secondary);
+        color: var(--primary);
+        transition: var(--transition-time);
+        cursor: pointer;
+    }
+    &_big{
+        padding: 22px 36px;
+        @media screen and (max-width : 992px) {
+            font-size: 16px;
+            padding: 17px 32px;
+        }
+    }
+    &_small{
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 18px; 
+    }
+}
+/*-- /BUTTON --*/

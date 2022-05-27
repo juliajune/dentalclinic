@@ -1,0 +1,30 @@
+/* PREVIEW-TRANSFORM */
+.preview-transform{
+	transform-style: preserve-3d;
+	perspective: 400px;
+    background: url("../image/dist/loading.gif") center / 50px no-repeat;
+    &__image{
+        width: 520px;
+        height: 360px;
+        transform: rotateY(7deg) rotateZ(-7deg);
+        border-radius: 8px;
+        box-shadow: 48px 24px 48px rgba(24, 37, 56, 0.12);
+        @media screen and (max-width : 992px) {
+            width: auto;
+            height: 300px;
+        }
+        @media screen and (max-width : 992px) {
+            height: 260px;
+        }
+        @media screen and (max-width : 500px) {
+            height: 220px;
+        }
+        @media screen and (max-width : 400px) {
+            height: 200px;
+        }
+        @media screen and (max-width : 300px) {
+            height: 150px;
+        }
+    }
+}
+/* PREVIEW-TRANSFORM */

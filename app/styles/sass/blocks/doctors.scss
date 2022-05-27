@@ -1,0 +1,131 @@
+/*-- DOCTORS --*/
+.doctors{
+    &__header{
+        margin-bottom: 40px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0px -13px;
+    }
+    &__item{
+        flex-basis: 25%;
+        padding: 13px;	      
+
+        @media screen and (max-width : 992px) {
+            flex-basis: 50%;	           
+        }
+        
+        @media screen and (max-width : 500px) {
+            flex-basis: 100%; 
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }         
+        }        
+    }   
+}
+/*-- /DOCTORS --*/
+
+
+/*-- SINGLE DOCTOR --*/
+.doctor{
+	background-color: var(--main);
+    &__preview{
+        margin-bottom: 5px;
+        position: relative;
+        z-index: 1;
+        height: 340px;
+        background: url("../image/dist/loading.gif") center / 50px no-repeat;
+    }
+    
+    &__image{
+        display: block;
+        object-fit: cover;       
+        width: 100%;
+        height: 100%;	
+    }
+    
+    
+    &__preview::before{
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: var(--transition-time);
+        z-index: 2;
+    }
+    
+    &__preview-hover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color:var(--main);
+        padding: 20px 10px;
+        opacity: 0;
+        transition: var(--transition-time);
+        z-index: 3;
+        text-align: center;
+        overflow-y: auto;
+    }
+    
+    &__preview:hover::before{
+        opacity: 1;
+        transition: var(--transition-time);
+    }
+    
+    &__preview:hover &__preview-hover{
+        opacity: 1;
+        transition: var(--transition-time);
+    }
+    
+    &__body{
+        background-color: var(--main);
+        text-align: center;
+        padding: 10px;
+    }
+    &__name{
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 400;
+        color: var(--text);
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        transition: var(--transition-time);
+    }
+    &__name:hover{
+        color: var(--primary);
+        transition: var(--transition-time);
+    }
+    &__position{
+        font-size: 16px;
+        line-height: 18px;
+        color: var(--primary);
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media screen and (max-width : 576px) {
+    .doctor{
+        &__preview{
+            margin-bottom: 25px;
+        }
+        &__name{
+            margin-bottom: 25px;
+        }
+        &__position{
+            margin-bottom: 25px;
+        }
+    }	
+}
+/*-- /SINGLE DOCTOR --*/

@@ -1,0 +1,25 @@
+/*-- CONTACT LIST --*/
+.contact-list{
+    &__item:not(:last-child){
+        margin-bottom: 13px;
+    }
+    &__title{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+    &__text{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    &__link{
+        display: inline-block;
+        border-bottom: 1px solid transparent;
+        transition: var(--transition-time);
+        &:hover{
+            border-bottom: 1px solid var(--main);
+            transition: var(--transition-time);
+        }
+    }    
+}
+/*-- /CONTACT LIST --*/

@@ -1,0 +1,121 @@
+/*-- TESTIMONIALS --*/
+.testimonials-slider{
+	position: relative;
+	overflow: hidden;
+	padding: 30px;	
+	.swiper-slide{
+		padding-top: 50px;
+	}
+	.swiper-slide.swiper-slide-next{
+		padding-top: 0px;
+
+	}
+	.swiper-pagination {
+		bottom: 50px;
+	}
+	@media screen and (max-width : 1200px) {
+		.testimonials-slider{
+			padding: 0px;	
+			box-shadow: 0px 15px 25px rgba(212, 217, 232, 0.2);
+		}
+		.swiper-slide, .swiper-slide.swiper-slide-next{
+			padding-top: 0px;
+		}
+		
+		.swiper-pagination {
+			bottom: 0px;
+		}
+		
+	}
+}
+/*-- /TESTIMONIALS --*/
+
+/*-- SINGLE TESTIMONIAL --*/
+.testimonial{
+	color: var(--secondary-text);
+	text-align: center;	
+}
+.testimonial__content{
+	position: relative;
+	background-color: var(--main);
+	border-radius: 10px;
+	box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+	padding: 35px 40px 25px 40px;
+	position: relative;
+}
+.testimonial__content::after{
+	content: ' ';
+	display: block;
+	position: absolute;
+	bottom: -16px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 16px solid var(--main);
+}
+
+.testimonial__title{
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 600;
+}
+.testimonial__text{
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;	
+}
+.testimonial__author{
+	padding: 35px 40px 25px 40px;
+}
+.testimonial__author-image{
+	display: inline-block;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	margin-bottom: 8px;
+}
+.testimonial__author-name{
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+}
+.testimonial__author-position{	
+	font-family: Manrope;
+	font-size: 14px;
+	line-height: 24px;
+	color: #474A57;
+
+}
+/*-- /SINGLE TESTIMONIAL --*/
+
+ .swiper-pagination {
+	position: absolute;
+	text-align: center;
+	transition: 300ms opacity;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+	&.swiper-pagination-hidden {
+	  opacity: 0;
+	}
+  }
+  .swiper-pagination-bullet {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 3px;
+	background-color: var(--primary);
+	border: 3px solid var(--main);
+    }
+	.swiper-pagination-bullet-active{
+		background-color: var(--main);
+		border-color: var(--primary);
+	}
+	
+	

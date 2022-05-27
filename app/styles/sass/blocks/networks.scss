@@ -1,0 +1,28 @@
+/*-- NETWORKS --*/
+.networks{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -11px;
+    @media screen and (max-width : 576px) {
+        margin: 0 -15px;
+    }
+    .networks__item{
+        padding: 0 11px;
+        @media screen and (max-width : 576px) {
+            padding: 0 15px;     
+        }
+    }
+    .networks__link {        
+        svg{
+            fill: var(--primary);
+            transition: var(--transition-time);
+        }
+        &:hover svg{
+            fill: var(--text);
+            transition: var(--transition-time);
+        }
+    } 
+}
+/*-- /NETWORKS --*/

@@ -1,0 +1,46 @@
+/*-- SUBSCRIBE --*/
+.subscribe{
+    border: 1px solid var(--main);
+    font-family: var(--userfont-secodary);
+    display: flex;
+    align-items: center;
+    &__email{
+        display: block;
+        background-color: var(--main);
+        color: var(--text);
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 400;
+        border: 0;
+        padding: 7px;
+        width: 60%;
+        &::placeholder{
+            color: var(--gray);
+            opacity: 1;
+            transition: var(--transition-time);
+        }
+        &:focus::placeholder{
+            opacity: 0;
+            transition: var(--transition-time);
+        }
+    }
+    &__button{
+        display: block;
+        background-color: var(--primary);
+        color: var(--main);
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 500;
+        border: 0;
+        padding: 7px;
+        text-align: center;
+        width: 40%;
+        transition: var(--transition-time);
+        &:hover{
+            background-color: var(--text);
+            cursor: pointer;
+            transition: var(--transition-time);
+        }
+    }
+}  
+/*-- SUBSCRIBE --*/
