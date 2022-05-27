@@ -1,6 +1,6 @@
 Dental clinic.
 
-Project life link: http://juliajune.github.io/dentalclinic
+Project live link: http://juliajune.github.io/dentalclinic
 
 Convert Figma template to HTML, CSS, Javascrit template.
 
