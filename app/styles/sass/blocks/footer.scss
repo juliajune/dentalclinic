@@ -1,10 +1,10 @@
 /*-- FOOTER --*/
 .footer{
 	padding: 35px 0px;
-	background-color: var(--primary);
-	color: var(--main);
+	background-color: $color-primary;
+	color: $color-main;
     svg{
-        fill: var(--main);
+        fill: $color-main;
     }
     &__content{
         display: flex;

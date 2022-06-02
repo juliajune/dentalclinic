@@ -1,0 +1,38 @@
+/*-- BREADCRUMBS  --*/
+.breadcrumbs{
+	color: $color-text;
+	font-family: Helvetica;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px; 
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;  
+	text-transform: capitalize;  
+    &__item{
+        position: relative;
+        &:not(:last-child){
+            margin-right: 20px;            
+        }
+        &:not(:last-child)::after{
+            content:'/';
+            display: block;
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $color-text;
+            transition: var($transition-time);
+        }
+    }
+    &__link{
+        color: $color-text;
+        transition: var($transition-time);
+        &:hover{
+            color: $color-main;
+            transition: var($transition-time);
+        }            
+    }                
+}
+/*-- /BREADCRUMBS  --*/

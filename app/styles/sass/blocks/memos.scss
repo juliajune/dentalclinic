@@ -1,7 +1,7 @@
 /*-- MEMOS SECTION--*/
 .memos{
     background-image: url('../images/dist/memos-bg.jpg');
-	background-color: var(--main);
+	background-color: $color-main;
 	background-position: center center;
 	background-repeat: no-repeat;
     padding: 70px 0px;
@@ -47,7 +47,7 @@
         letter-spacing: -0.38 px;
         text-transform: uppercase;
         font-weight: 700;
-        color: var(--text);
+        color: $color-text;
         margin-bottom: 25px;  
         @media screen and (max-width : 768px) {
             font-size: 18px;
@@ -68,7 +68,7 @@
     &__title{
         font-size: 20px;
         line-height: 27px;
-        color: var(--primary);
+        color: $color-primary;
         margin-bottom: 3px; 
         @media screen and (max-width : 768px) {
             font-size: 16px;

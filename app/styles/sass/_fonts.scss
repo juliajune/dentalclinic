@@ -1,0 +1,32 @@
+// FONTS LOAD SECTION
+$title-font: montseratt, sans-serif;
+$text-font: open-sans, sans-serif;
+
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $font-family;
+        font-weight: $weight;
+        font-style: $style;
+        src: url('#{$file-path}.eot');
+        src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype');
+        font-display: swap;
+    }
+}
+
+
+@include font-face("manrope", "../fonts/manrope/Manrope-Light", 300);
+@include font-face("manrope", "../fonts/manrope/Manrope-Regular", 400);
+@include font-face("manrope", "../fonts/manrope/Manrope-Medium", 500);
+@include font-face("manrope", "../fonts/manrope/Manrope-SemiBold", 600);
+@include font-face("manrope", "../fonts/manrope/Manrope-Bold", 700);
+@include font-face("manrope", "../fonts/manrope/Manrope-ExtraBold", 800);
+
+
+@include font-face("rubik", "../fonts/rubik/Rubik-Light", 300);
+@include font-face("rubik", "../fonts/rubik/Rubik-Regular", 400);
+
+@include font-face("roboto", "../fonts/roboto/Roboto-Light", 300);
+@include font-face("roboto", "../fonts/roboto/Roboto-Regular", 400);
+@include font-face("roboto", "../fonts/roboto/Roboto-Medium", 500);
+

@@ -1,0 +1,71 @@
+/*-- PAGE --*/
+.page{
+    &__header{
+        background-color: $color-primary;
+        padding: 43px 0px;
+        
+    }
+    &__header-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__title{
+        color: $color-main;
+        font-family: Helvetica;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 33px;  
+        text-align: center;
+        margin-bottom: 10px;
+        text-transform: capitalize;		   
+    }
+    &__top{
+        display: flex;
+        flex-direction: row;
+        &__col{
+            width: 50%;
+        }
+    }
+
+}
+/*-- /PAGE --*/
+
+
+.page-content h1{
+	font-size: 40px;
+	line-height: 42px;
+	font-weight: 800;
+	color: $color-secondary-text;
+}
+
+.page-content h2{
+	font-size: 36px;
+	line-height: 38px;
+	font-weight: 800;
+	color: $color-secondary-text;
+}
+
+.page-content h3{
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 600;
+	color: $color-secondary-text;
+}
+
+.page-content h4{
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 600;
+	color: $color-secondary-text;
+}
+
+.page-content h5{
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 600;
+	color: $color-secondary-text;
+}

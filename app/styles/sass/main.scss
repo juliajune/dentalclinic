@@ -2,6 +2,7 @@
 @use 'sass:color';
 
 @import 'reset';
+@import 'fonts';
 @import 'vars';
 @import 'global';
 @import 'node_modules/swiper/swiper';
@@ -21,7 +22,10 @@
 @import 'blocks/testimonials';
 @import 'blocks/blog';
 @import 'blocks/post';
-
+@import 'blocks/page';
+@import 'blocks/breadcrumbs';
+@import 'blocks/about';
+@import 'blocks/departments';
 
 @import 'blocks/footer';
 @import 'blocks/contact-list';

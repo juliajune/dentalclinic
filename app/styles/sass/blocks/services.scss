@@ -29,7 +29,7 @@
     &__more{
        font-size: 20px;
        &:hover{
-        color: var(--primary);
+        color: $color-primary;
        }
     }    
 }
@@ -86,14 +86,14 @@
         font-size: 24px;
         line-height: 26px;
         font-weight: 600;
-        color: var(--secondary-text);
+        color: $color-secondary-text;
         margin-bottom: 10px;
     }
     
     &__text{
         font-size: 16px;
         line-height: 26px;
-        color: var(--secondary-text);
+        color: $color-secondary-text;
         margin-bottom: 40px;
         @media screen and (max-width : 992px) {           
             margin-bottom: 20px;          
@@ -106,8 +106,8 @@
 	display: inline-block;
 	position: relative;
 	font-weight: 700;
-	transition: var(--transition-time);
-	color: var(--text);
+	transition: var($transition-time);
+	color: $color-text;
 	font-size: 12px;
 	line-height: 16px;
 	padding-right: 20px;
@@ -121,8 +121,8 @@
     }
     
     &:hover{
-        transition: var(--transition-time);
-        color: var(--primary);
+        transition: var($transition-time);
+        color: $color-primary;
     }
     
     &_big{
@@ -132,11 +132,11 @@
     }
     
     &_light{
-        color: var(--primary);
+        color: $color-primary;
     }
     
     &_light:hover{
-        color: var(--text);
+        color: $color-text;
     }
 }
 

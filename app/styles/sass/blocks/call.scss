@@ -1,7 +1,7 @@
 /*-- CALL SECTION --*/
 .call{
 	&__title{
-		color: var(--primary);
+		color: $color-primary;
 		font-size: 30px;
 		line-height: 32px;
 		font-weight: 400;
@@ -16,10 +16,10 @@
 		font-weight: 700;
 		padding-bottom: 2px;
 		border-bottom: 2px solid transparent;
-		transition: var(--transition-time);
+		transition: var($transition-time);
 		&:hover{
-			border-bottom: 2px solid var(--primary);
-			transition: var(--transition-time);
+			border-bottom: 2px solid $color-primary;
+			transition: var($transition-time);
 		}
 	}	
 }

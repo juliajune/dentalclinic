@@ -17,12 +17,12 @@
             left: 0;
             background-color: rgba(0, 0, 0, 0.3);
             opacity: 0;
-            transition: var(--transition-time);
+            transition: var($transition-time);
             z-index: 2;
         }
         &:hover::before{
             opacity: 1;
-            transition: var(--transition-time);
+            transition: var($transition-time);
         }
     }
    
@@ -45,28 +45,28 @@
         font-size: 18px;
         line-height: 26px;
         font-weight: 600;
-        color: var(--text);
+        color: $color-text;
         margin-bottom: 15px;
         a{
-            transition: var(--transition-time);
+            transition: var($transition-time);
         }
         a:hover{
-            color: var(--primary);
-            transition: var(--transition-time);
+            color: $color-primary;
+            transition: var($transition-time);
         }
         
     }
     .post__excerpt{
-        color: var(--gray);
+        color: $color-gray;
         font-size: 14px;
         line-height: 21px;
         a{
-            transition: var(--transition-time);
+            transition: var($transition-time);
         }
         
         a:hover{
-            color: var(--primary);
-            transition: var(--transition-time);
+            color: $color-primary;
+            transition: var($transition-time);
         }
         
     }
@@ -76,13 +76,13 @@
 /*-- Post author --*/
 .post-author{
 	display: block;
-	color: var(--primary);
-	transition: var(--transition-time);
+	color: $color-primary;
+	transition: var($transition-time);
 	font-size: 12px;
 	line-height: 14px;
     &:hover{
-        color: var(--gray-light);
-        transition: var(--transition-time);
+        color: $color-gray-light;
+        transition: var($transition-time);
     }
 }
 /*-- /Post author --*/
@@ -102,7 +102,7 @@
             position: absolute;
             width: 1px;
             height: 10px;
-            background-color: var(--gray-lighter);
+            background-color: $color-gray-lighter;
             left: 0;
             top: 50%;
             transform: translateY(-50%);
@@ -115,12 +115,12 @@
 .post-date{
 	font-size: 12px;
 	line-height: 14px;
-	color: var(--gray-light);
-	transition: var(--transition-time);
+	color: $color-gray-light;
+	transition: var($transition-time);
     text-transform: capitalize;
     &:hover{
-        color: var(--primary);
-        transition: var(--transition-time);
+        color: $color-primary;
+        transition: var($transition-time);
     }
 }
 /*-- /Post date --*/
@@ -129,15 +129,15 @@
 .post-comments{
 	font-size: 12px;
 	line-height: 14px;
-	color: var(--gray-light);
-	transition: var(--transition-time);
+	color: $color-gray-light;
+	transition: var($transition-time);
     .icon{
         margin-right: 5px;
-	    fill: var(--primary);
+	    fill: $color-primary;
     }
     &:hover{
-        color: var(--primary);
-        transition: var(--transition-time);
+        color: $color-primary;
+        transition: var($transition-time);
     }
 }
 /*-- /Post comments --*/
@@ -147,17 +147,17 @@
 .post-likes{
 	font-size: 12px;
 	line-height: 14px;
-	color: var(--gray-light);
-	transition: var(--transition-time);
+	color: $color-gray-light;
+	transition: var($transition-time);
     .icon{
         width: 11px;
         height: 11px;
         margin-right: 5px;
-        fill: var(--primary);
+        fill: $color-primary;
     }
     &:hover{
-        color: var(--primary);
-        transition: var(--transition-time);
+        color: $color-primary;
+        transition: var($transition-time);
     }
 }
 /*-- /Post likes --*/

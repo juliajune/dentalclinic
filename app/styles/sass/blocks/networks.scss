@@ -16,12 +16,12 @@
     }
     .networks__link {        
         svg{
-            fill: var(--primary);
-            transition: var(--transition-time);
+            fill: $color-primary;
+            transition: var($transition-time);
         }
         &:hover svg{
-            fill: var(--text);
-            transition: var(--transition-time);
+            fill: $color-text;
+            transition: var($transition-time);
         }
     } 
 }
