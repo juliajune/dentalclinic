@@ -2,16 +2,19 @@
 .blog{
     &__content{
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
         margin: 0px -25px;
+        flex-direction: row;
+        flex-wrap: wrap;  
         @media screen and (max-width : 992px) {
             margin: 0px -10px;	         
         }
     }
     &__item{
-        flex-basis: 33.33%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 33.33%;
+        min-width: 33.33%;
         padding-left: 25px;	
         padding-right: 25px;
         &:not(:nth-child(-n+3)){
@@ -55,6 +58,7 @@
 
 @media screen and (max-width : 576px) {
     .blog{
+        flex-direction: column;
         &__item{
             flex-basis: 100%;
             &:not(:first-child){

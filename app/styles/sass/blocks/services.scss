@@ -4,14 +4,17 @@
    
     &__content{
         display: flex;
-        justify-content: space-between;
         align-items: center;
         margin: 0px -75px 85px -75px;
         flex-direction: row;
+        flex-wrap: wrap;       
     }
     
-    &__item{
-        flex-basis: 33.33%;
+    &__item{        
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 33.33%;
+        min-width: 33.33%;
         padding-right: 75px;
         padding-left: 75px;	
         &:not(:nth-child(-n+3)){

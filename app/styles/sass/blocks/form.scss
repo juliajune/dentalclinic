@@ -9,7 +9,6 @@
     }
     &__row-content{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
         margin: 0 -15px;
         @media screen and (max-width : 768px) {

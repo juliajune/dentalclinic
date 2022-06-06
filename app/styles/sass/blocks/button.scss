@@ -3,10 +3,12 @@
     display: inline-block;
     background-color: $color-primary;
     border-radius: 10px;
+    border-color: $color-primary;
     color: $color-main;
     font-size: 20px;
     padding: 17px 32px;
     transition: $transition-time;
+    box-shadow: none;
     &:hover{
         background-color: $color-secondary;
         color: $color-primary;

@@ -4,7 +4,7 @@
     background-color: $color-gray-lighter;
     font-size: 14px;
     line-height: 16px;
-    color: var(--text);
+    color: $color-text;
     padding: 16px 15px;
     border: 1px solid $color-gray-lighter;
     transition: $transition-time;
@@ -14,6 +14,4 @@
         transition: $transition-time;
     }
  }
-
-
 /*-- /TEXTAREA --*/
