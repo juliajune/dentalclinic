@@ -2,7 +2,8 @@
 .preview-transform{
 	transform-style: preserve-3d;
 	perspective: 400px;
-    background: url("../image/dist/loading.gif") center / 50px no-repeat;
+    display: block;
+    
     &__image{
         width: 520px;
         height: 360px;

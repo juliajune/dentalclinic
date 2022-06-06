@@ -1,0 +1,69 @@
+/*-- FORM  --*/
+.form{
+    background-color: var(--main);
+    &__row:not(:last-child){
+        margin-bottom: 30px;
+    }
+    &__row_center-align{
+        text-align: center;
+    }
+    &__row-content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0 -15px;
+        @media screen and (max-width : 768px) {
+            flex-direction: column;
+        }
+    }
+    &__col{
+       flex-basis: 50%;
+       padding: 0 15px;
+       @media screen and (max-width : 768px) {
+            flex-basis: 100%;
+        }
+    }
+    &__col:not(:last-child){
+        @media screen and (max-width : 768px) {
+            margin-bottom: 30px;
+        }
+    }
+    &__message{
+      margin-bottom: 20px;
+    }
+    &__label{
+        margin-bottom: 12px;
+    }
+    &__input{
+        width: 100%;
+    }
+    &__textarea{
+        width: 100%;
+    }
+    &__button{
+        width: 170px;
+    }
+}
+/*-- /FORM --*/
+
+/*-- MESSAGE --*/
+.message{
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    &_error{
+        border: 1px solid var(--error-color);
+        color: var(--error-color)
+    }
+    &_succes{
+        border: 1px solid var(--succes-color);
+        color: var(--succes-color)
+    }
+}
+
+/*-- /MESSAGE --*/
+
+
+

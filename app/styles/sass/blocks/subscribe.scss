@@ -17,11 +17,11 @@
         &::placeholder{
             color: $color-gray;
             opacity: 1;
-            transition: var($transition-time);
+            transition: $transition-time;
         }
         &:focus::placeholder{
             opacity: 0;
-            transition: var($transition-time);
+            transition: $transition-time;
         }
     }
     &__button{
@@ -35,11 +35,11 @@
         padding: 7px;
         text-align: center;
         width: 40%;
-        transition: var($transition-time);
+        transition: $transition-time;
         &:hover{
             background-color: $color-text;
             cursor: pointer;
-            transition: var($transition-time);
+            transition: $transition-time;
         }
     }
 }  

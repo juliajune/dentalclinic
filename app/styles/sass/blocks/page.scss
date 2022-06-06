@@ -22,14 +22,14 @@
         text-align: center;
         margin-bottom: 10px;
         text-transform: capitalize;		   
+    } 
+    
+    &__pagination{
+        padding: 50px 0px;
+        
     }
-    &__top{
-        display: flex;
-        flex-direction: row;
-        &__col{
-            width: 50%;
-        }
-    }
+
+    
 
 }
 /*-- /PAGE --*/

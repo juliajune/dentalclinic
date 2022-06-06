@@ -23,15 +23,15 @@
             top: 50%;
             transform: translateY(-50%);
             color: $color-text;
-            transition: var($transition-time);
+            transition: $transition-time;
         }
     }
     &__link{
         color: $color-text;
-        transition: var($transition-time);
+        transition: $transition-time;
         &:hover{
             color: $color-main;
-            transition: var($transition-time);
+            transition: $transition-time;
         }            
     }                
 }

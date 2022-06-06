@@ -6,11 +6,11 @@
     color: $color-main;
     font-size: 20px;
     padding: 17px 32px;
-    transition: var($transition-time);
+    transition: $transition-time;
     &:hover{
         background-color: $color-secondary;
         color: $color-primary;
-        transition: var($transition-time);
+        transition: $transition-time;
         cursor: pointer;
     }
     &_big{

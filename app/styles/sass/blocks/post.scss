@@ -1,88 +1,121 @@
 /*-- POST --*/
 .post{
     &__preview{
-        margin-bottom: 15px;
-        position: relative;
-        display: block;
-        z-index: 1;
-        height: 200px;
-        background: url("../image/dist/loading.gif") center / 50px no-repeat;
-        &::before{
-            content: ' ';
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.3);
-            opacity: 0;
-            transition: var($transition-time);
-            z-index: 2;
-        }
-        &:hover::before{
-            opacity: 1;
-            transition: var($transition-time);
-        }
-    }
-   
-    &__preview-image{
-        display: block;
-        object-fit: cover;       
-        width: 100%;
-        height: 100%;
-    }
+        height: 200px; 
+        margin-bottom: 15px;  
+    }   
     &__info{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 7px;
+       margin-bottom: 7px;
     }
     &__author{
         margin-right: 27px;
     }
-    .post__title{
-        font-size: 18px;
-        line-height: 26px;
-        font-weight: 600;
-        color: $color-text;
-        margin-bottom: 15px;
-        a{
-            transition: var($transition-time);
-        }
-        a:hover{
-            color: $color-primary;
-            transition: var($transition-time);
-        }
-        
-    }
-    .post__excerpt{
-        color: $color-gray;
-        font-size: 14px;
-        line-height: 21px;
-        a{
-            transition: var($transition-time);
-        }
-        
-        a:hover{
-            color: $color-primary;
-            transition: var($transition-time);
-        }
-        
-    }
+    &__title{
+        margin-bottom: 15px;              
+    }    
 }
 /*-- /SINGLE POST --*/
+
+/*-- Post preview --*/
+.post-preview{
+    position: relative;
+    display: block;
+    z-index: 1;      
+    &::before{
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: $transition-time;
+        z-index: 2;
+    }
+    &:hover::before{
+        opacity: 1;
+        transition: $transition-time;
+    }
+}
+.post-preview__image{
+    display: block;
+    object-fit: cover;       
+    width: 100%;
+    height: 100%;
+}
+/*-- /Post preview --*/
+
+/*--  Post title --*/
+.post-title{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: $color-text;    
+    a{
+        transition: $transition-time;
+    }
+    a:hover{
+        color: $color-primary;
+        transition: $transition-time;
+    } 
+    &_big{
+        font-size: 26px;        
+        @media screen and (max-width : 992px) {
+            font-size: 18px;
+        }
+    }   
+}
+/*--  /Post title --*/
+
+/*--  Post excerpt --*/
+.post-excerpt{
+    color: $color-gray;
+    font-size: 14px;
+    line-height: 21px;
+    &__text{
+        transition: $transition-time;
+        &:hover{
+            color: $color-primary;
+            transition: $transition-time;
+        }    
+    }    
+     
+}
+.post-excerpt__more{
+    color: $color-primary;
+    font-weight: 900;
+    display: inline-block;
+    padding: 0 5px;
+    transition: $transition-time;
+    &:hover{
+        color: $color-gray;
+        transition: $transition-time;
+    }   
+}   
+
+/*--  /Post excerpt --*/
+
+/*-- Post info --*/
+.post-info{
+    display: flex;
+    align-items: center;
+    
+}
+/*-- /Post info --*/
+
 
 /*-- Post author --*/
 .post-author{
 	display: block;
 	color: $color-primary;
-	transition: var($transition-time);
+	transition: $transition-time;
 	font-size: 12px;
 	line-height: 14px;
     &:hover{
         color: $color-gray-light;
-        transition: var($transition-time);
+        transition: $transition-time;
     }
 }
 /*-- /Post author --*/
@@ -90,9 +123,7 @@
 /*-- Post meta --*/
 .meta{
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
     &__item{
         position: relative;	
         padding: 0px 10px;
@@ -116,11 +147,11 @@
 	font-size: 12px;
 	line-height: 14px;
 	color: $color-gray-light;
-	transition: var($transition-time);
+	transition: $transition-time;
     text-transform: capitalize;
     &:hover{
         color: $color-primary;
-        transition: var($transition-time);
+        transition: $transition-time;
     }
 }
 /*-- /Post date --*/
@@ -130,14 +161,14 @@
 	font-size: 12px;
 	line-height: 14px;
 	color: $color-gray-light;
-	transition: var($transition-time);
+	transition: $transition-time;
     .icon{
         margin-right: 5px;
 	    fill: $color-primary;
     }
     &:hover{
         color: $color-primary;
-        transition: var($transition-time);
+        transition: $transition-time;
     }
 }
 /*-- /Post comments --*/
@@ -148,7 +179,7 @@
 	font-size: 12px;
 	line-height: 14px;
 	color: $color-gray-light;
-	transition: var($transition-time);
+	transition: $transition-time;
     .icon{
         width: 11px;
         height: 11px;
@@ -157,9 +188,47 @@
     }
     &:hover{
         color: $color-primary;
-        transition: var($transition-time);
+        transition: $transition-time;
     }
 }
 /*-- /Post likes --*/
+
+/*-- Feautered post --*/
+.feautered-post{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0px;
+    @media screen and (max-width : 768px) {
+        flex-direction: column;
+    }
+    &__preview{
+        flex-basis: 50%;
+        display: block;
+        @media screen and (max-width : 768px) {
+            flex-basis: 100%;
+            margin-bottom: 15px;
+            height: 200px;
+        }
+    }
+    &__body{
+        flex-basis: 50%;
+        padding-left: 25px;
+        @media screen and (max-width : 768px) {
+            flex-basis: 100%;
+            padding-left: 0px;
+            
+        }
+    }
+    &__title{
+        margin-bottom: 15px;
+    }
+    &__info{
+        margin-bottom: 15px;
+    }
+
+}
+/*-- /Feautered post --*/
+
+
 
 

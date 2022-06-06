@@ -1,0 +1,53 @@
+/*-- PAGINATION --*/
+.pagination{
+    position: relative;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -4px;
+    justify-content: flex-end;
+    @media screen and (max-width : 992px) {
+        justify-content: center;
+        margin: 0 -10px;
+    }
+    &__item{
+        padding: 4px;
+        @media screen and (max-width : 992px) {
+            padding: 10px;
+        }
+    }
+    &__link{
+        padding:  10px 17px 8px 17px;
+        background-color: $color-gray-lighter;
+        color: $color-gray-light;
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: 500;
+        font-family: $font-family-userfont;
+        transition: $transition-time;
+        display: block;
+    }
+    &__link_active{
+        background-color: $color-primary;
+        color: $color-main;
+        pointer-events: none;
+    }
+    &__link:hover{
+        background-color: $color-gray-light;
+        color: $color-main;
+        transition: $transition-time;
+    }
+    &__icon{
+        width: 10px;
+        height: 16px;
+        fill: $color-gray-light;
+    }
+    &__link:hover &__icon{
+        fill: $color-main; 
+    }
+    &__link_active  &__icon{
+        fill: $color-main;            
+    }
+}
+
+/*-- /PAGINATION --*/

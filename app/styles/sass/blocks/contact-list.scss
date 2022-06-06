@@ -15,10 +15,10 @@
     &__link{
         display: inline-block;
         border-bottom: 1px solid transparent;
-        transition: var($transition-time);
+        transition: $transition-time;
         &:hover{
             border-bottom: 1px solid $color-main;
-            transition: var($transition-time);
+            transition: $transition-time;
         }
     }    
 }

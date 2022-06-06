@@ -1,0 +1,19 @@
+/*-- TEXTAREA --*/
+.textarea{
+    display: block;
+    background-color: $color-gray-lighter;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text);
+    padding: 16px 15px;
+    border: 1px solid $color-gray-lighter;
+    transition: $transition-time;
+    border-radius: 5px;
+    &:focus{
+        border-color: var(--gray);
+        transition: $transition-time;
+    }
+ }
+
+
+/*-- /TEXTAREA --*/

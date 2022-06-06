@@ -10,6 +10,9 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 -25px;
+        @media screen and (max-width : 576px) {
+            margin: 0;
+        }
         p:not(:last-child){
             margin-bottom: 15px;
         }

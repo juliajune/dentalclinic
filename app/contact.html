@@ -1,0 +1,106 @@
+<!--#include virtual="/parts/header.html" -->
+<!-- PAGE -->
+<div class="page">
+    <div class="page__header">
+        <div class="container">
+            <div class="page__header-content">
+                <h1 class="page__title">our contact</h1>
+                <ul class="page__breadcrumbs breadcrumbs">
+                    <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Home</a></li>                        
+                    <li class="breadcrumbs__item">contact</li>
+                </ul>
+                <!--/.page__breadcrumbs breadcrumbs-->
+           </div>
+           <!--/.page__header-content-->
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.page__header-->
+    <div class="page__body">
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__content">
+                    <div class="contacts__item contact ">
+                        <svg class="contact__icon"><use xlink:href="images/dist/sprite.svg#location"></use></svg>
+                        <h2 class="contact__title">adress</h2>
+                        <div class="contact__content">
+                            <p>A-655 Karol bagh, Near </p>
+                            <p>Delhi 93 – <a href="#" class="contact__link contact__link_map">Map</a></p>
+                        </div>
+                    </div>
+                    <!-- /.contact__item -->
+                    <div class="contacts__item contact ">
+                        <svg class="contact__icon"><use xlink:href="images/dist/sprite.svg#phone"></use></svg>
+                        <h2 class="contact__title">contact info</h2>
+                        <div class="contact__content">
+                            <p>Email : <a href="mailto:abc@abc.com" target="_blank" class="contact__link">techwero@gmail.com</a></p>
+                            <p>Phone : <a href=”tel:+61383766284” target="_blank" class="contact__link">+61 3 8376 6284</a></p>                                
+                        </div>
+                    </div>
+                    <!-- /.contact__item -->
+                    <div class="contacts__item contact ">
+                        <svg class="contact__icon"><use xlink:href="images/dist/sprite.svg#clock"></use></svg>
+                        <h2 class="contact__title">open hour</h2>
+                        <div class="contact__content">
+                            <p>Monday – Friday : 09:00 – 20:00</p>
+                            <p>Sunday & Saturday: 10:30 – 22:00</p>
+                        </div>
+                    </div>
+                    <!-- /.contact__item -->
+                </div>
+                <!-- /.contacts__content-->                    
+            </div>
+            <!-- /.container-->
+        </section>
+        <!-- /.contacts-->
+        <section class="section feedback">
+            <div class="container">
+                <div class="feedback__header">
+                    <h2 class="feedback__title section-title">Get in touch</h2> 
+                </div>                    
+                <div class="feedback__content">
+                    <form class="feedback__form form">
+                        <p class="form__message message message_error">Field can't be empty</p>
+                        <div class="form__row form__row-content">
+                            <div class="form__col">
+                                <p class="form__message message message_error">Field can't be empty</p>
+                                <label class="label form__label">Your name</label>
+                                <input type="text" name="name" class="input form__input">
+                            </div>
+                            <div class="form__col">
+                                <p class="form__message message message_error">Field can't be empty</p>
+                                <label class="label form__label">Your email</label>
+                                <input type="email" name="email" class="input form__input">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <p class="form__message message message_error">Field can't be empty</p>
+                            <label class="label form__label">Subject</label>
+                            <input type="text" name="subject" class="input form__input">
+                        </div>
+                        <div class="form__row">
+                            <p class="form__message message message_succes">Field can't be empty</p>
+                            <label class="label form__label">Your Message</label>
+                            <textarea class="textarea form__textarea" name="message" cols="30" rows="6"></textarea>
+                       </div>
+                       <div class="form__row form__row_center-align">
+                           <button class="button button_small form__button">Send</button>
+                       </div>
+                    </form>
+                    <!-- /.feedback__form -->
+                </div>
+                <!-- /.feedback__content -->                     
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section section -->
+        <div id="#map">
+
+        </div>
+        <!--#include virtual="/parts/testimonials.html" -->
+    </div>
+    <!-- /.page__body -->
+</div>
+<!--/.page-->
+<!-- PAGE -->
+<!--#include virtual="/parts/footer.html" -->

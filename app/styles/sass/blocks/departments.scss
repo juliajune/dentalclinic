@@ -16,17 +16,24 @@
     }
     &__item:nth-last-child(-n+4){
         padding-bottom: 0px;
-    }
-    
+    }    
+}
+
+.department{
     &__title{
-        font-family: Helvetica;
         font-size: 14px;
         font-style: normal;
         font-weight: 700;
         line-height: 16px;
         text-align: left;
         color: $color-primary;
-        margin-bottom: 10px;
+        margin-bottom: 10px;        
+    }   
+    &__content{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 16px;
+        text-align: left;
     }
 }
 

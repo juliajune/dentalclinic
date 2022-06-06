@@ -99,5 +99,9 @@ body {
 	font-size: 18px;
 	line-height: 32px;
 	text-align: center;
+	&_small{
+		font-size: 14px;
+		line-height: 16px;		
+	}
 }
 /*-- /SECTION DESCRIPTION--*/

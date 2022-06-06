@@ -16,23 +16,23 @@
         width: 32px;
         height: 32px;
         border-radius: 50%;
-        transition: var($transition-time);
+        transition: $transition-time;
         display: flex;
         align-items: center;
         justify-content: center;
         svg{
             fill: $color-primary;
-            transition: var($transition-time);
+            transition: $transition-time;
             width: 15px;
             height: 15px;
         }
         &:hover{
             background-color: $color-primary;
             color: $color-secondary;
-            transition: var($transition-time);
+            transition: $transition-time;
             svg{
                 fill: $color-main;
-                transition: var($transition-time);
+                transition: $transition-time;
             }
         }
 

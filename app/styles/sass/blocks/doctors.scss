@@ -37,7 +37,7 @@
         position: relative;
         z-index: 1;
         height: 340px;
-        background: url("../image/dist/loading.gif") center / 50px no-repeat;
+        
     }
     
     &__image{
@@ -58,7 +58,7 @@
         left: 0;
         background-color: rgba(0, 0, 0, 0.5);
         opacity: 0;
-        transition: var($transition-time);
+        transition: $transition-time;
         z-index: 2;
     }
     
@@ -71,7 +71,7 @@
         color:$color-main;
         padding: 20px 10px;
         opacity: 0;
-        transition: var($transition-time);
+        transition: $transition-time;
         z-index: 3;
         text-align: center;
         overflow-y: auto;
@@ -79,12 +79,12 @@
     
     &__preview:hover::before{
         opacity: 1;
-        transition: var($transition-time);
+        transition: $transition-time;
     }
     
     &__preview:hover &__preview-hover{
         opacity: 1;
-        transition: var($transition-time);
+        transition: $transition-time;
     }
     
     &__body{
@@ -99,11 +99,11 @@
         color: $color-text;
         text-transform: uppercase;
         margin-bottom: 5px;
-        transition: var($transition-time);
+        transition: $transition-time;
     }
     &__name:hover{
         color: $color-primary;
-        transition: var($transition-time);
+        transition: $transition-time;
     }
     &__position{
         font-size: 16px;

@@ -1,0 +1,23 @@
+/*-- INPUT --*/
+.input{
+    display: block;
+    background-color: $color-gray-lighter;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-text;
+    padding: 16px 15px;
+    border: 1px solid $color-gray-lighter;
+    transition: $transition-time;
+    border-radius: 5px;
+}
+.input:focus{
+    border-color: $color-gray;
+    transition: $transition-time;
+}
+.field-error{
+    border-color: $color-error; 
+}
+.field-succes{
+    border-color: $color-succes; 
+}
+/*-- /INPUT --*/

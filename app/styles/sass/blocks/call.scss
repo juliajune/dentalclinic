@@ -16,10 +16,10 @@
 		font-weight: 700;
 		padding-bottom: 2px;
 		border-bottom: 2px solid transparent;
-		transition: var($transition-time);
+		transition: $transition-time;
 		&:hover{
 			border-bottom: 2px solid $color-primary;
-			transition: var($transition-time);
+			transition: $transition-time;
 		}
 	}	
 }

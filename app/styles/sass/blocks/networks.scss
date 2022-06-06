@@ -17,11 +17,11 @@
     .networks__link {        
         svg{
             fill: $color-primary;
-            transition: var($transition-time);
+            transition: $transition-time;
         }
         &:hover svg{
             fill: $color-text;
-            transition: var($transition-time);
+            transition: $transition-time;
         }
     } 
 }
