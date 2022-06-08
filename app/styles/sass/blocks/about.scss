@@ -29,13 +29,15 @@
     &__content{
         display: flex;
         justify-content: space-between;
-        ;
+        flex-wrap: wrap;
         flex-direction: row;
         margin: 0 -20px;       
        
     }
     &__col{
         width: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
         padding: 0 20px;      
         @media screen and (max-width : 768px) {
             width: 100%;   

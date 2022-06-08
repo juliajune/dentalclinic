@@ -14,7 +14,6 @@
         flex-grow: 1;
         flex-shrink: 1;
         width: 33.33%;
-        min-width: 33.33%;
         padding-left: 25px;	
         padding-right: 25px;
         &:not(:nth-child(-n+3)){
@@ -45,7 +44,7 @@
 @media screen and (max-width : 768px) {
     .blog{
         &__item{
-            flex-basis: 50%;
+            width: 50%;
             &:not(:nth-child(-n+2)){
                 padding-top: 20px;
             }            
@@ -60,7 +59,7 @@
     .blog{
         flex-direction: column;
         &__item{
-            flex-basis: 100%;
+            width: 100%;
             &:not(:first-child){
                 padding-top: 20px;
             }

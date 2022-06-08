@@ -12,7 +12,6 @@
         flex-grow: 1;
         flex-shrink: 1;
         width: 25%;
-        min-width: 25%;
         padding-right: 25px;
         padding-left: 25px;        
     }
@@ -47,7 +46,7 @@
 @media screen and (max-width : 768px) {
     .advantages{
         &__item{
-            flex-basis: 50%;
+            width: 50%;
         }
         &__item:not(:nth-child(-n+2)){
             padding-top: 10px;		

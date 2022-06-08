@@ -21,6 +21,7 @@
         align-items: center;
         justify-content: space-between;	
         flex-direction: row;
+        flex-wrap: wrap;
         margin: 0 -55px;
         @media screen and (max-width : 992px) {
             margin: 0 -20px;
@@ -34,6 +35,8 @@
     }
     &__col{
         width: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
         padding: 0 55px;
         @media screen and (max-width : 992px) {
             padding: 0 20px;

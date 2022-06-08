@@ -15,6 +15,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.17.8",
 		"@babel/preset-env": "^7.16.11",
+		"@types/swiper": "^6.0.0",
 		"autoprefixer": "^10.4.4",
 		"babel-loader": "^8.2.4",
 		"babel-plugin-module-resolver": "^4.1.0",
@@ -43,7 +44,6 @@
 		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
-		"swiper": "^8.1.5",
-		"tiny-slider": "^2.9.4"
+		"swiper": "^4.5.1"
 	}
 }

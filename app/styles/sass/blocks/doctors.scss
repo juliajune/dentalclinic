@@ -14,16 +14,14 @@
         flex-grow: 1;
         flex-shrink: 1;
         width: 25%;
-        min-width: 25%;
-        flex-basis: 25%;
         padding: 13px;	     
 
         @media screen and (max-width : 992px) {
-            flex-basis: 50%;	           
+            width: 50%;	           
         }
         
         @media screen and (max-width : 500px) {
-            flex-basis: 100%; 
+            width: 100%; 
             &:not(:last-child){
                 margin-bottom: 30px;
             }         

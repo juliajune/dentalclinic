@@ -10,16 +10,19 @@
     &__row-content{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         margin: 0 -15px;
         @media screen and (max-width : 768px) {
             flex-direction: column;
         }
     }
     &__col{
-       flex-basis: 50%;
+       width: 50%;
+       flex-grow: 1;
+       flex-wrap: 1;
        padding: 0 15px;
        @media screen and (max-width : 768px) {
-            flex-basis: 100%;
+           width: 100%;
         }
     }
     &__col:not(:last-child){
@@ -53,12 +56,12 @@
     border-radius: 5px;
     display: none;
     &_error{
-        border: 1px solid var(--error-color);
-        color: var(--error-color)
+        border: 1px solid $color-error;
+        color: $color-error;
     }
     &_succes{
-        border: 1px solid var(--succes-color);
-        color: var(--succes-color)
+        border: 1px solid $color-succes;
+        color: $color-succes;
     }
 }
 
