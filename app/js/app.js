@@ -1,8 +1,9 @@
 
-import Swiper from 'swiper';
+//import Swiper from 'swiper';
 
 document.addEventListener('DOMContentLoaded', () => {
 	/*--  TESTIMONIALS SLIDER --*/   
+	/*
 	let sliderTestimonials = new Swiper('.testimonials-slider', {
 		autoplay: {
 			delay: 3000,           
@@ -24,7 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
 				mousewheel: false,			             
 			},
 		}  
-	});   
+	});  
+	*/ 
 	/*--  /TESTIMONIALS SLIDER --*/   
 	/*-- BURGER MENU --*/
 	let burgerMenu = document.querySelector('.header__burger');
