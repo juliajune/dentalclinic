@@ -1,6 +1,8 @@
 
 //import Swiper from 'swiper';
 
+import '../libs/swiper.min.js';
+
 document.addEventListener('DOMContentLoaded', () => {
 	/*--  TESTIMONIALS SLIDER --*/   
 	/*
@@ -27,7 +29,29 @@ document.addEventListener('DOMContentLoaded', () => {
 		}  
 	});  
 	*/ 
-	/*--  /TESTIMONIALS SLIDER --*/   
+	/*--  /TESTIMONIALS SLIDER --*/  
+	let sliderTestimonials = new Swiper('.testimonials-slider', {
+		autoplay: {
+			delay: 3000,           
+		},
+		loop: true,
+		loopedSlides: 3,
+		slidesPerView: 3,
+		mousewheel: true,		
+		spaceBetween: 30,  
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},  
+		breakpoints: {
+			992: {
+				loopedSlides: 1,
+				slidesPerView: 1,
+				spaceBetween: 60, 	
+				mousewheel: false,			             
+			},
+		}  
+	});   
 	/*-- BURGER MENU --*/
 	let burgerMenu = document.querySelector('.header__burger');
 	let menuBody = document.querySelector('.header__nav');
