@@ -2,14 +2,11 @@
 .page{
     &__header{
         background-color: $color-primary;
-        padding: 43px 0px;
+        
         
     }
     &__header-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 43px 0px;       
     }
     
     &__title{
@@ -23,10 +20,9 @@
         margin-bottom: 10px;
         text-transform: capitalize;		   
     } 
-    
+
     &__pagination{
-        padding: 50px 0px;
-        
+        padding: 50px 0px;            
     }
 
     

@@ -12,7 +12,15 @@
 	}
 	.swiper-pagination {
 		bottom: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		opacity: 1;
 	}
+	.swiper-pagination-bullet{
+		opacity: 1;
+	}
+
+
 	@media screen and (max-width : 1200px) {
 		.testimonials-slider{
 			padding: 0px;	

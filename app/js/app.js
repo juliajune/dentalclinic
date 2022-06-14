@@ -1,9 +1,13 @@
 
 //import Swiper from 'swiper';
 
+
 import '../libs/swiper.min.js';
+import '../libs/svgxuse.min.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+
+	
 	/*--  TESTIMONIALS SLIDER --*/   
 	/*
 	let sliderTestimonials = new Swiper('.testimonials-slider', {
