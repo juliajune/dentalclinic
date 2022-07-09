@@ -22,46 +22,95 @@
     } 
 
     &__pagination{
-        padding: 50px 0px;            
+        padding: 20px 0px;            
     }
 
-    
+    &__body{
+        padding: 55px 0;
+    }
 
+    &__content-parts{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__inner{
+        width: 75%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 0 20px;
+        @media screen and (max-width : 992px) {
+            width: 60%;
+        }
+        @media screen and (max-width : 768px) {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+    &__sidebar{
+        width: 25%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        @media screen and (max-width : 992px) {
+            width: 40%;
+        }
+        @media screen and (max-width : 768px) {
+            width: 100%;            
+        }
+    }
 }
+
+    .page-content{
+        h1{
+            font-size: 40px;
+            line-height: 42px;
+            font-weight: 800;
+            color: $color-secondary-text;
+        }
+        
+        h2{
+            font-size: 36px;
+            line-height: 38px;
+            font-weight: 800;
+            color: $color-secondary-text;
+        }
+        
+        h3{
+            font-size: 24px;
+            line-height: 26px;
+            font-weight: 600;
+            color: $color-secondary-text;
+        }
+        
+        h4{
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 600;
+            color: $color-secondary-text;
+        }
+        
+        h5{
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 600;
+            color: $color-secondary-text;
+        }
+        h6{
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+            color: $color-secondary-text;
+        }
+        ul{
+            margin-left: 15px;
+            line-height: 1.5;
+        }
+        p{
+            margin-bottom: 15px;
+        }
+
+    }
+
 /*-- /PAGE --*/
 
 
-.page-content h1{
-	font-size: 40px;
-	line-height: 42px;
-	font-weight: 800;
-	color: $color-secondary-text;
-}
-
-.page-content h2{
-	font-size: 36px;
-	line-height: 38px;
-	font-weight: 800;
-	color: $color-secondary-text;
-}
-
-.page-content h3{
-	font-size: 24px;
-	line-height: 26px;
-	font-weight: 600;
-	color: $color-secondary-text;
-}
-
-.page-content h4{
-	font-size: 20px;
-	line-height: 22px;
-	font-weight: 600;
-	color: $color-secondary-text;
-}
-
-.page-content h5{
-	font-size: 18px;
-	line-height: 20px;
-	font-weight: 600;
-	color: $color-secondary-text;
-}

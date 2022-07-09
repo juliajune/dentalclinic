@@ -1,0 +1,61 @@
+/* SINGLE DOCTOR */
+.single-doctor{
+    &__content{
+        margin-bottom: 30px;
+    }
+    &__pagination{
+        margin-bottom: 30px;
+    }
+    &__contents{
+        margin-bottom: 30px;
+    }
+    &__info{
+        padding-bottom: 30px;
+    }
+}
+
+.doctor-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    &__preview{
+        width: 40%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        height: 320px;
+       
+    }
+    &__image{
+        display: block;
+        object-fit: cover;       
+        width: 100%;
+        height: 100%;	
+    }
+    &__body{
+        width: 60%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 0px 40px 30px 40px;
+    }
+    &__name{
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+        color: $color-primary;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__list{
+        line-height: 2;
+        margin-bottom: 15px;
+    }
+    &__list-item{
+        span{
+            text-transform: uppercase;
+            font-weight: 500;
+            
+        }
+    }
+    
+}
+/* /SINGLE DOCTOR */

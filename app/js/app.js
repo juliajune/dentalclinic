@@ -5,34 +5,7 @@
 import '../libs/swiper.min.js';
 import '../libs/svgxuse.min.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-
-	
-	/*--  TESTIMONIALS SLIDER --*/   
-	/*
-	let sliderTestimonials = new Swiper('.testimonials-slider', {
-		autoplay: {
-			delay: 3000,           
-		},
-		loop: true,
-		loopedSlides: 3,
-		slidesPerView: 3,
-		mousewheel: true,		
-		spaceBetween: 30,  
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		},  
-		breakpoints: {
-			992: {
-				loopedSlides: 1,
-				slidesPerView: 1,
-				spaceBetween: 60, 	
-				mousewheel: false,			             
-			},
-		}  
-	});  
-	*/ 
+document.addEventListener('DOMContentLoaded', () => {	
 	/*--  /TESTIMONIALS SLIDER --*/  
 	let sliderTestimonials = new Swiper('.testimonials-slider', {
 		autoplay: {
@@ -41,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		loop: true,
 		loopedSlides: 3,
 		slidesPerView: 3,
-		mousewheel: true,		
+		//mousewheel: true,		
 		spaceBetween: 30,  
 		pagination: {
 			el: ".swiper-pagination",

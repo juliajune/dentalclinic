@@ -1,0 +1,11 @@
+/* SIDEBAR */
+    .sidebar{
+	    border: 1px solid $color-gray-lighter;
+        padding: 20px;
+        border-radius: $border-radius;
+
+        &__widget:not(:last-child){
+            margin-bottom: 40px;
+        }        
+    }
+/* /SIDEBAR */
